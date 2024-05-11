@@ -1,0 +1,87 @@
+body {
+  /* Définition de la disposition en grille pour le corps de la page */
+  grid-template-columns: [start sidebar-start] 1fr 
+      [sidebar-end content-start] 4fr [end content-end];
+  grid-template-rows: [start header-start] 1fr [header-end content-start] 
+      2fr [content-end content-two-start] 5fr [content-two-end footer-start]
+      auto [end footer-end];
+}
+
+/* Style pour les éléments de sortie à l'intérieur des groupes de formulaires */
+.form-group output {
+  /* Mise en forme du texte de sortie */
+  margin-left: 5%;
+  width: 50%;
+  font-weight: bold;
+  color: var(--third-color); /* Utilisation de la variable CSS --third-color */
+}
+
+/* Style pour les éléments span à l'intérieur de la classe 'contn' */
+.contn span {
+  color: var(--third-color); /* Utilisation de la variable CSS --third-color */
+}
+
+/* Style pour le bloc de messages */
+.msg-block {
+  width: 95%;
+  margin: 10px;
+}
+
+/* Style pour les messages envoyés */
+.sent-msg {
+  border: 1px solid var(--fourth-color); /* Utilisation de la variable CSS --fourth-color */
+  border-radius: 4px;
+  background-color: var(--main-color); /* Utilisation de la variable CSS --main-color */
+  padding: 10px;
+  margin-left: 60%;
+  overflow-wrap: break-word;
+}
+
+/* Style pour l'horodatage des messages */
+.time_stamp {
+  font-size: 10px;
+  text-align: right;
+}
+
+/* Style pour les messages de diffusion */
+.broadcast {
+  border: 1px solid var(--fourth-color); /* Utilisation de la variable CSS --fourth-color */
+  border-radius: 4px;
+  background-color: var(--main-color); /* Utilisation de la variable CSS --main-color */
+  padding: 10px;
+}
+
+/* Style pour les messages reçus */
+.received-msg {
+  border: 1px solid var(--fourth-color); /* Utilisation de la variable CSS --fourth-color */
+  border-radius: 4px;
+  background-color: var(--main-color); /* Utilisation de la variable CSS --main-color */
+  padding: 10px;
+  margin-right: 60%;
+  margin-left: 3%;
+}
+
+/* Style pour la boîte de chat */
+.chat-box {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  overflow-y: auto;
+  border: 1px solid var(--fourth-color); /* Utilisation de la variable CSS --fourth-color */
+  border-radius: 4px;
+  max-height: 320px;
+  width: 95%;
+  margin: 20px;
+}
+
+/* Style pour les éléments de saisie de formulaire */
+.form-input {
+  width: 50%;
+  margin-left: 5%;
+}
+
+/* Style pour les étiquettes de groupe de formulaires */
+.form-group label {
+  width: 5%;
+}

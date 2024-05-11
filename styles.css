@@ -1,0 +1,74 @@
+/* Définition des couleurs de base pour faciliter le thème de la mise en page */
+:root {
+    /* Première palette de couleurs */
+    --main-color: #CDE8E5;  /* Couleur principale, utilisée pour les arrière-plans principaux */
+    --second-color: #EEF7FF;  /* Couleur secondaire, utilisée pour les arrière-plans secondaires */
+    --third-color: #7AB2B2;  /* Troisième couleur, utilisée pour les éléments d'accentuation */
+    --fourth-color: #4D869C;  /* Quatrième couleur, utilisée pour le texte ou les détails accentués */
+
+    /* Deuxième palette de couleurs - Bleu et blanc */
+    --main-color: #DBE2EF;  /* Couleur principale en bleu doux */
+    --second-color: #F9F7F7;  /* Couleur secondaire en blanc cassé */
+    --third-color: #3F72AF;  /* Troisième couleur en bleu foncé */
+    --fourth-color: #112D4E;  /* Quatrième couleur en bleu marine */
+
+    /* Palette de couleurs foncées pour des thèmes alternatifs ou des modes sombres */
+    --main-dark-color: #003C43;  /* Couleur foncée principale */
+    --second-dark-color: #135D66;  /* Couleur foncée secondaire */
+    --third-dark-color: #77B0AA;  /* Troisième couleur foncée */
+    --fourth-dark-color: #E3FEF7;  /* Quatrième couleur très claire pour des détails contrastés */
+}
+
+/* Styles globaux pour le corps de la page */
+body {
+    font-family: 'Arial', sans-serif;  /* Police de caractères pour tout le texte */
+    background-color: var(--main-color);  /* Couleur de fond pour le corps entier, utilisant la couleur principale */
+    margin: 0;  /* Aucune marge externe pour éviter des espaces inutiles autour des éléments */
+    padding: 0;  /* Aucun padding pour éviter des espaces intérieurs */
+    display: flex;  /* Utilisation de Flexbox pour un alignement flexible des éléments */
+    justify-content: center;  /* Centre horizontalement les éléments contenus */
+    align-items: center;  /* Centre verticalement les éléments contenus */
+    height: 100vh;  /* Hauteur totale de la fenêtre de visualisation */
+}
+
+/* Styles pour le conteneur principal */
+.container {
+    background: var(--second-color);  /* Couleur de fond pour le conteneur, utilisant la couleur secondaire */
+    padding: 40px;  /* Espace interne autour du contenu du conteneur */
+    border-radius: 8px;  /* Bordures arrondies pour une apparence douce */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);  /* Ombre portée pour un effet de profondeur */
+    text-align: center;  /* Alignement du texte au centre */
+}
+
+/* Styles spécifiques pour les titres de niveau 1 (h1) */
+h1 {
+    color: var(--fourth-color);  /* Couleur du texte des titres, utilisant la quatrième couleur */
+}
+
+/* Styles pour les paragraphes */
+p {
+    color: var(--fourth-color);  /* Couleur du texte pour les paragraphes, identique à celle des titres */
+}
+
+/* Styles pour la section des boutons */
+.buttons {
+    margin-top: 20px;  /* Marge supérieure pour espacer du contenu précédent */
+}
+
+/* Styles individuels pour chaque bouton */
+.button {
+    background-color: var(--third-color);  /* Couleur de fond des boutons, utilisant la troisième couleur */
+    color: white;  /* Couleur du texte sur les boutons pour un contraste élevé */
+    text-decoration: none;  /* Aucun soulignement du texte */
+    padding: 10px 20px;  /* Espacement interne autour du texte du bouton */
+    margin: 10px;  /* Marge autour de chaque bouton pour éviter qu'ils se touchent */
+    border-radius: 5px;  /* Bordures légèrement arrondies pour les boutons */
+    display: inline-block;  /* Les boutons sont des blocs mais alignés comme des éléments en ligne */
+    transition: background-color 0.3s;  /* Transition douce pour le changement de couleur de fond au survol */
+}
+
+/* Effet de survol pour les boutons */
+.button:hover {
+    background-color: var(--main-color);  /* Couleur de fond change au survol, utilisant la couleur principale */
+    color: var(--fourth-color);  /* Changement de couleur du texte au survol pour maintenir la visibilité */
+}
